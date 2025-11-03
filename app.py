@@ -31,7 +31,7 @@ retriever = db.as_retriever()
 
 # ========= 3. LLM設定 =========
 # 記得在 Render 設定環境變數 OPENAI_API_KEY
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("GROQ_API_KEY")
 base_url = "https://api.groq.com/openai/v1"
 client = OpenAI(api_key=api_key, base_url=base_url)
 model = "llama-3.1-8b-instant"
